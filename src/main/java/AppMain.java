@@ -1,23 +1,10 @@
-
-import model.Ranking;
-import dao.RankingDAO;
-
-import java.util.List;
+import view.RankingView;
 
 public class AppMain {
     public static void main(String[] args) {
+        RankingView rankingView = new RankingView();
+        rankingView.rankview();
 
-        RankingDAO rankingDao = new RankingDAO();
 
-        List<Ranking> rankingList = rankingDao.connect();
-
-        for (Ranking ranking : rankingList) {
-            System.out.printf(
-                    "USERNAME: %s, SCORE: %d, DIFFICULTY: %s\n",
-                    ranking.getUSERNAME(),
-                    ranking.getSCORE(),
-                    ranking.getDIFFICULTY());
-        }
-
-    }
 }
+    }
