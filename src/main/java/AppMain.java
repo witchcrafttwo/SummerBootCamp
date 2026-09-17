@@ -1,10 +1,7 @@
 
-import model.Emp;
-import model.EmpDao;
 import model.Ranking;
-import model.RankingDAO;
+import dao.RankingDAO;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class AppMain {
